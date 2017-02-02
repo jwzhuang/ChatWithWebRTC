@@ -1,0 +1,747 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E19E0091E3040E900B869F0 /* BonjourClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E19E0081E3040E900B869F0 /* BonjourClient.swift */; };
+		1E19E00D1E30594100B869F0 /* BonjourService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E19E00C1E30594100B869F0 /* BonjourService.swift */; };
+		1E19E00F1E30B6AF00B869F0 /* SignalingServerConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E19E00E1E30B6AF00B869F0 /* SignalingServerConnection.swift */; };
+		1E19E0111E31AF3E00B869F0 /* SignalingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E19E0101E31AF3E00B869F0 /* SignalingResponse.swift */; };
+		1E34AAD41E1EA74500700883 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E922C6D1E1E2C0600BEEF04 /* WebRTC.framework */; };
+		1E34AAD51E1EA74500700883 /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1E922C6D1E1E2C0600BEEF04 /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1E4164C01E29D1D700AA33C8 /* PeersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4164BF1E29D1D700AA33C8 /* PeersTableViewController.swift */; };
+		1E4164C21E29D2B900AA33C8 /* Callee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4164C11E29D2B900AA33C8 /* Callee.swift */; };
+		1E51DB311E2DE4C700E2969C /* SignalingMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E51DB301E2DE4C700E2969C /* SignalingMessage.swift */; };
+		1E69694A1E21334600D4CF45 /* RTCIceServer+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6969491E21334600D4CF45 /* RTCIceServer+JSON.m */; };
+		1E69694D1E21335F00D4CF45 /* RTCIceCandidate+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E69694C1E21335F00D4CF45 /* RTCIceCandidate+JSON.m */; };
+		1E6969501E21336D00D4CF45 /* RTCSessionDescription+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E69694F1E21336D00D4CF45 /* RTCSessionDescription+JSON.m */; };
+		1E6969551E23529300D4CF45 /* ConstraintsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6969541E23529300D4CF45 /* ConstraintsFactory.swift */; };
+		1E6969571E236AD600D4CF45 /* SDPUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6969561E236AD600D4CF45 /* SDPUtils.swift */; };
+		1E69695B1E249A9100D4CF45 /* SignalingServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E69695A1E249A9100D4CF45 /* SignalingServer.swift */; };
+		1E922C341E1D28BD00BEEF04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E922C331E1D28BD00BEEF04 /* AppDelegate.swift */; };
+		1E922C361E1D28BD00BEEF04 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E922C351E1D28BD00BEEF04 /* ChatViewController.swift */; };
+		1E922C391E1D28BE00BEEF04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E922C371E1D28BE00BEEF04 /* Main.storyboard */; };
+		1E922C3B1E1D28BE00BEEF04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E922C3A1E1D28BE00BEEF04 /* Assets.xcassets */; };
+		1E922C3E1E1D28BE00BEEF04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E922C3C1E1D28BE00BEEF04 /* LaunchScreen.storyboard */; };
+		1E922C6B1E1E0DA600BEEF04 /* SettingsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E922C671E1E0DA600BEEF04 /* SettingsModel.m */; };
+		1E922C6C1E1E0DA600BEEF04 /* SettingsStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E922C6A1E1E0DA600BEEF04 /* SettingsStore.m */; };
+		1ECE739B1E33017000896E2B /* CalleePool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECE739A1E33017000896E2B /* CalleePool.swift */; };
+		1EDD3C6D1E31C84400B53EF0 /* BaseHTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDD3C6C1E31C84400B53EF0 /* BaseHTTPConnection.m */; };
+		1EDD3D061E31FA9100B53EF0 /* DDData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDD3CD91E31FA9100B53EF0 /* DDData.m */; };
+		1EDD3D071E31FA9100B53EF0 /* DDNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDD3CDB1E31FA9100B53EF0 /* DDNumber.m */; };
+		1EDD3D081E31FA9100B53EF0 /* DDRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDD3CDD1E31FA9100B53EF0 /* DDRange.m */; };
+		1EDD3D091E31FA9100B53EF0 /* HTTPAuthenticationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDD3CDF1E31FA9100B53EF0 /* HTTPAuthenticationRequest.m */; };
+		1EDD3D0A1E31FA9100B53EF0 /* HTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDD3CE11E31FA9100B53EF0 /* HTTPConnection.m */; };
+		1EDD3D0B1E31FA9100B53EF0 /* HTTPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDD3CE41E31FA9100B53EF0 /* HTTPMessage.m */; };
+		1EDD3D0C1E31FA9100B53EF0 /* HTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDD3CE71E31FA9100B53EF0 /* HTTPServer.m */; };
+		1EDD3D0D1E31FA9100B53EF0 /* MultipartFormDataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDD3CEA1E31FA9100B53EF0 /* MultipartFormDataParser.m */; };
+		1EDD3D0E1E31FA9100B53EF0 /* MultipartMessageHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDD3CEC1E31FA9100B53EF0 /* MultipartMessageHeader.m */; };
+		1EDD3D0F1E31FA9100B53EF0 /* MultipartMessageHeaderField.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDD3CEE1E31FA9100B53EF0 /* MultipartMessageHeaderField.m */; };
+		1EDD3D101E31FA9100B53EF0 /* HTTPAsyncFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDD3CF11E31FA9100B53EF0 /* HTTPAsyncFileResponse.m */; };
+		1EDD3D111E31FA9100B53EF0 /* HTTPDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDD3CF31E31FA9100B53EF0 /* HTTPDataResponse.m */; };
+		1EDD3D121E31FA9100B53EF0 /* HTTPDynamicFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDD3CF51E31FA9100B53EF0 /* HTTPDynamicFileResponse.m */; };
+		1EDD3D131E31FA9100B53EF0 /* HTTPFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDD3CF71E31FA9100B53EF0 /* HTTPFileResponse.m */; };
+		1EDD3D141E31FA9100B53EF0 /* HTTPRedirectResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDD3CF91E31FA9100B53EF0 /* HTTPRedirectResponse.m */; };
+		1EDD3D151E31FA9100B53EF0 /* WebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDD3CFB1E31FA9100B53EF0 /* WebSocket.m */; };
+		1EDD3D161E31FA9100B53EF0 /* DAVConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDD3CFF1E31FA9100B53EF0 /* DAVConnection.m */; };
+		1EDD3D171E31FA9100B53EF0 /* DAVResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDD3D011E31FA9100B53EF0 /* DAVResponse.m */; };
+		1EDD3D181E31FA9100B53EF0 /* DELETEResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDD3D031E31FA9100B53EF0 /* DELETEResponse.m */; };
+		1EDD3D191E31FA9100B53EF0 /* PUTResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDD3D051E31FA9100B53EF0 /* PUTResponse.m */; };
+		1EDD3D201E31FDAB00B53EF0 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EDD3D1C1E31FD0300B53EF0 /* libxml2.tbd */; };
+		1EDEA3DF1E20C3EA0027D727 /* RTCUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDEA3DE1E20C3EA0027D727 /* RTCUtil.swift */; };
+		32AA5236C5FE555D6F54C04C /* Pods_ChatWithWebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59D246ADBF06D6E3EE36684E /* Pods_ChatWithWebRTC.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1E34AAD61E1EA74500700883 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1E34AAD51E1EA74500700883 /* WebRTC.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		05436B812EE78E4FA82E4C9D /* Pods-ChatWithWebRTC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatWithWebRTC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChatWithWebRTC/Pods-ChatWithWebRTC.debug.xcconfig"; sourceTree = "<group>"; };
+		1E19E0081E3040E900B869F0 /* BonjourClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BonjourClient.swift; sourceTree = "<group>"; };
+		1E19E00C1E30594100B869F0 /* BonjourService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BonjourService.swift; sourceTree = "<group>"; };
+		1E19E00E1E30B6AF00B869F0 /* SignalingServerConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalingServerConnection.swift; sourceTree = "<group>"; };
+		1E19E0101E31AF3E00B869F0 /* SignalingResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalingResponse.swift; sourceTree = "<group>"; };
+		1E4164BF1E29D1D700AA33C8 /* PeersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeersTableViewController.swift; sourceTree = "<group>"; };
+		1E4164C11E29D2B900AA33C8 /* Callee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Callee.swift; sourceTree = "<group>"; };
+		1E51DB301E2DE4C700E2969C /* SignalingMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalingMessage.swift; sourceTree = "<group>"; };
+		1E6969481E21334600D4CF45 /* RTCIceServer+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RTCIceServer+JSON.h"; sourceTree = "<group>"; };
+		1E6969491E21334600D4CF45 /* RTCIceServer+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RTCIceServer+JSON.m"; sourceTree = "<group>"; };
+		1E69694B1E21335F00D4CF45 /* RTCIceCandidate+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RTCIceCandidate+JSON.h"; sourceTree = "<group>"; };
+		1E69694C1E21335F00D4CF45 /* RTCIceCandidate+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RTCIceCandidate+JSON.m"; sourceTree = "<group>"; };
+		1E69694E1E21336C00D4CF45 /* RTCSessionDescription+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RTCSessionDescription+JSON.h"; sourceTree = "<group>"; };
+		1E69694F1E21336D00D4CF45 /* RTCSessionDescription+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RTCSessionDescription+JSON.m"; sourceTree = "<group>"; };
+		1E6969541E23529300D4CF45 /* ConstraintsFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintsFactory.swift; sourceTree = "<group>"; };
+		1E6969561E236AD600D4CF45 /* SDPUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDPUtils.swift; sourceTree = "<group>"; };
+		1E69695A1E249A9100D4CF45 /* SignalingServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalingServer.swift; sourceTree = "<group>"; };
+		1E922C301E1D28BD00BEEF04 /* ChatWithWebRTC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatWithWebRTC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E922C331E1D28BD00BEEF04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1E922C351E1D28BD00BEEF04 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		1E922C381E1D28BE00BEEF04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1E922C3A1E1D28BE00BEEF04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1E922C3D1E1D28BE00BEEF04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1E922C3F1E1D28BE00BEEF04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E922C5B1E1E0B9400BEEF04 /* ChatWithWebRTC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChatWithWebRTC-Bridging-Header.h"; sourceTree = "<group>"; };
+		1E922C661E1E0DA600BEEF04 /* SettingsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsModel.h; sourceTree = "<group>"; };
+		1E922C671E1E0DA600BEEF04 /* SettingsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsModel.m; sourceTree = "<group>"; };
+		1E922C681E1E0DA600BEEF04 /* SettingsModel+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SettingsModel+Private.h"; sourceTree = "<group>"; };
+		1E922C691E1E0DA600BEEF04 /* SettingsStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsStore.h; sourceTree = "<group>"; };
+		1E922C6A1E1E0DA600BEEF04 /* SettingsStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsStore.m; sourceTree = "<group>"; };
+		1E922C6D1E1E2C0600BEEF04 /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebRTC.framework; sourceTree = "<group>"; };
+		1ECE739A1E33017000896E2B /* CalleePool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalleePool.swift; sourceTree = "<group>"; };
+		1EDD3C6B1E31C84400B53EF0 /* BaseHTTPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseHTTPConnection.h; sourceTree = "<group>"; };
+		1EDD3C6C1E31C84400B53EF0 /* BaseHTTPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseHTTPConnection.m; sourceTree = "<group>"; };
+		1EDD3CD81E31FA9100B53EF0 /* DDData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDData.h; sourceTree = "<group>"; };
+		1EDD3CD91E31FA9100B53EF0 /* DDData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDData.m; sourceTree = "<group>"; };
+		1EDD3CDA1E31FA9100B53EF0 /* DDNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDNumber.h; sourceTree = "<group>"; };
+		1EDD3CDB1E31FA9100B53EF0 /* DDNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDNumber.m; sourceTree = "<group>"; };
+		1EDD3CDC1E31FA9100B53EF0 /* DDRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDRange.h; sourceTree = "<group>"; };
+		1EDD3CDD1E31FA9100B53EF0 /* DDRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDRange.m; sourceTree = "<group>"; };
+		1EDD3CDE1E31FA9100B53EF0 /* HTTPAuthenticationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPAuthenticationRequest.h; sourceTree = "<group>"; };
+		1EDD3CDF1E31FA9100B53EF0 /* HTTPAuthenticationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPAuthenticationRequest.m; sourceTree = "<group>"; };
+		1EDD3CE01E31FA9100B53EF0 /* HTTPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPConnection.h; sourceTree = "<group>"; };
+		1EDD3CE11E31FA9100B53EF0 /* HTTPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPConnection.m; sourceTree = "<group>"; };
+		1EDD3CE21E31FA9100B53EF0 /* HTTPLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPLogging.h; sourceTree = "<group>"; };
+		1EDD3CE31E31FA9100B53EF0 /* HTTPMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPMessage.h; sourceTree = "<group>"; };
+		1EDD3CE41E31FA9100B53EF0 /* HTTPMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPMessage.m; sourceTree = "<group>"; };
+		1EDD3CE51E31FA9100B53EF0 /* HTTPResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPResponse.h; sourceTree = "<group>"; };
+		1EDD3CE61E31FA9100B53EF0 /* HTTPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPServer.h; sourceTree = "<group>"; };
+		1EDD3CE71E31FA9100B53EF0 /* HTTPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPServer.m; sourceTree = "<group>"; };
+		1EDD3CE91E31FA9100B53EF0 /* MultipartFormDataParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipartFormDataParser.h; sourceTree = "<group>"; };
+		1EDD3CEA1E31FA9100B53EF0 /* MultipartFormDataParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipartFormDataParser.m; sourceTree = "<group>"; };
+		1EDD3CEB1E31FA9100B53EF0 /* MultipartMessageHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipartMessageHeader.h; sourceTree = "<group>"; };
+		1EDD3CEC1E31FA9100B53EF0 /* MultipartMessageHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipartMessageHeader.m; sourceTree = "<group>"; };
+		1EDD3CED1E31FA9100B53EF0 /* MultipartMessageHeaderField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipartMessageHeaderField.h; sourceTree = "<group>"; };
+		1EDD3CEE1E31FA9100B53EF0 /* MultipartMessageHeaderField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipartMessageHeaderField.m; sourceTree = "<group>"; };
+		1EDD3CF01E31FA9100B53EF0 /* HTTPAsyncFileResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPAsyncFileResponse.h; sourceTree = "<group>"; };
+		1EDD3CF11E31FA9100B53EF0 /* HTTPAsyncFileResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPAsyncFileResponse.m; sourceTree = "<group>"; };
+		1EDD3CF21E31FA9100B53EF0 /* HTTPDataResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPDataResponse.h; sourceTree = "<group>"; };
+		1EDD3CF31E31FA9100B53EF0 /* HTTPDataResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPDataResponse.m; sourceTree = "<group>"; };
+		1EDD3CF41E31FA9100B53EF0 /* HTTPDynamicFileResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPDynamicFileResponse.h; sourceTree = "<group>"; };
+		1EDD3CF51E31FA9100B53EF0 /* HTTPDynamicFileResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPDynamicFileResponse.m; sourceTree = "<group>"; };
+		1EDD3CF61E31FA9100B53EF0 /* HTTPFileResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPFileResponse.h; sourceTree = "<group>"; };
+		1EDD3CF71E31FA9100B53EF0 /* HTTPFileResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPFileResponse.m; sourceTree = "<group>"; };
+		1EDD3CF81E31FA9100B53EF0 /* HTTPRedirectResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPRedirectResponse.h; sourceTree = "<group>"; };
+		1EDD3CF91E31FA9100B53EF0 /* HTTPRedirectResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPRedirectResponse.m; sourceTree = "<group>"; };
+		1EDD3CFA1E31FA9100B53EF0 /* WebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebSocket.h; sourceTree = "<group>"; };
+		1EDD3CFB1E31FA9100B53EF0 /* WebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebSocket.m; sourceTree = "<group>"; };
+		1EDD3CFE1E31FA9100B53EF0 /* DAVConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAVConnection.h; sourceTree = "<group>"; };
+		1EDD3CFF1E31FA9100B53EF0 /* DAVConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAVConnection.m; sourceTree = "<group>"; };
+		1EDD3D001E31FA9100B53EF0 /* DAVResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAVResponse.h; sourceTree = "<group>"; };
+		1EDD3D011E31FA9100B53EF0 /* DAVResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAVResponse.m; sourceTree = "<group>"; };
+		1EDD3D021E31FA9100B53EF0 /* DELETEResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DELETEResponse.h; sourceTree = "<group>"; };
+		1EDD3D031E31FA9100B53EF0 /* DELETEResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DELETEResponse.m; sourceTree = "<group>"; };
+		1EDD3D041E31FA9100B53EF0 /* PUTResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PUTResponse.h; sourceTree = "<group>"; };
+		1EDD3D051E31FA9100B53EF0 /* PUTResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PUTResponse.m; sourceTree = "<group>"; };
+		1EDD3D1B1E31FBCA00B53EF0 /* CocoaHttpServer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaHttpServer.h; sourceTree = "<group>"; };
+		1EDD3D1C1E31FD0300B53EF0 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		1EDD3D1E1E31FD2A00B53EF0 /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
+		1EDEA3DE1E20C3EA0027D727 /* RTCUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTCUtil.swift; sourceTree = "<group>"; };
+		48524157B71FD93FC6FDC4D5 /* Pods-ChatWithWebRTC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatWithWebRTC.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChatWithWebRTC/Pods-ChatWithWebRTC.release.xcconfig"; sourceTree = "<group>"; };
+		59D246ADBF06D6E3EE36684E /* Pods_ChatWithWebRTC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatWithWebRTC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1E922C2D1E1D28BD00BEEF04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EDD3D201E31FDAB00B53EF0 /* libxml2.tbd in Frameworks */,
+				1E34AAD41E1EA74500700883 /* WebRTC.framework in Frameworks */,
+				32AA5236C5FE555D6F54C04C /* Pods_ChatWithWebRTC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A05C874DE3D06AE300FC02A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1EDD3D1E1E31FD2A00B53EF0 /* libxml2.2.tbd */,
+				1EDD3D1C1E31FD0300B53EF0 /* libxml2.tbd */,
+				59D246ADBF06D6E3EE36684E /* Pods_ChatWithWebRTC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1E19E0071E3040D100B869F0 /* BonjourUtils */ = {
+			isa = PBXGroup;
+			children = (
+				1E19E0081E3040E900B869F0 /* BonjourClient.swift */,
+				1E19E00C1E30594100B869F0 /* BonjourService.swift */,
+			);
+			name = BonjourUtils;
+			sourceTree = "<group>";
+		};
+		1E922C271E1D28BC00BEEF04 = {
+			isa = PBXGroup;
+			children = (
+				1E922C321E1D28BD00BEEF04 /* ChatWithWebRTC */,
+				1E922C311E1D28BD00BEEF04 /* Products */,
+				B99E7B78CD25FCBB67D1FBC4 /* Pods */,
+				0A05C874DE3D06AE300FC02A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1E922C311E1D28BD00BEEF04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1E922C301E1D28BD00BEEF04 /* ChatWithWebRTC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1E922C321E1D28BD00BEEF04 /* ChatWithWebRTC */ = {
+			isa = PBXGroup;
+			children = (
+				1E922C451E1D28D700BEEF04 /* lib */,
+				1EDD3CBF1E31F2CD00B53EF0 /* thirdparty */,
+				1E922C331E1D28BD00BEEF04 /* AppDelegate.swift */,
+				1E922C351E1D28BD00BEEF04 /* ChatViewController.swift */,
+				1E4164BF1E29D1D700AA33C8 /* PeersTableViewController.swift */,
+				1ECE739A1E33017000896E2B /* CalleePool.swift */,
+				1E922C371E1D28BE00BEEF04 /* Main.storyboard */,
+				1E922C3A1E1D28BE00BEEF04 /* Assets.xcassets */,
+				1E922C3C1E1D28BE00BEEF04 /* LaunchScreen.storyboard */,
+				1E922C3F1E1D28BE00BEEF04 /* Info.plist */,
+			);
+			path = ChatWithWebRTC;
+			sourceTree = "<group>";
+		};
+		1E922C451E1D28D700BEEF04 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				1EF1951D1E35FD870017931A /* RTCUtils */,
+				1E19E0071E3040D100B869F0 /* BonjourUtils */,
+				1E922C661E1E0DA600BEEF04 /* SettingsModel.h */,
+				1E922C671E1E0DA600BEEF04 /* SettingsModel.m */,
+				1E922C681E1E0DA600BEEF04 /* SettingsModel+Private.h */,
+				1E922C691E1E0DA600BEEF04 /* SettingsStore.h */,
+				1E922C6A1E1E0DA600BEEF04 /* SettingsStore.m */,
+				1E6969541E23529300D4CF45 /* ConstraintsFactory.swift */,
+				1E6969561E236AD600D4CF45 /* SDPUtils.swift */,
+				1E69695A1E249A9100D4CF45 /* SignalingServer.swift */,
+				1E19E00E1E30B6AF00B869F0 /* SignalingServerConnection.swift */,
+				1E19E0101E31AF3E00B869F0 /* SignalingResponse.swift */,
+				1E51DB301E2DE4C700E2969C /* SignalingMessage.swift */,
+				1E4164C11E29D2B900AA33C8 /* Callee.swift */,
+				1EDD3C6B1E31C84400B53EF0 /* BaseHTTPConnection.h */,
+				1EDD3C6C1E31C84400B53EF0 /* BaseHTTPConnection.m */,
+				1E922C5B1E1E0B9400BEEF04 /* ChatWithWebRTC-Bridging-Header.h */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		1EDD3CBF1E31F2CD00B53EF0 /* thirdparty */ = {
+			isa = PBXGroup;
+			children = (
+				1EDD3CD51E31FA9100B53EF0 /* CocoaHTTPServer */,
+			);
+			path = thirdparty;
+			sourceTree = "<group>";
+		};
+		1EDD3CD51E31FA9100B53EF0 /* CocoaHTTPServer */ = {
+			isa = PBXGroup;
+			children = (
+				1EDD3CD61E31FA9100B53EF0 /* Core */,
+				1EDD3CFC1E31FA9100B53EF0 /* Extensions */,
+			);
+			path = CocoaHTTPServer;
+			sourceTree = "<group>";
+		};
+		1EDD3CD61E31FA9100B53EF0 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				1EDD3CD71E31FA9100B53EF0 /* Categories */,
+				1EDD3D1B1E31FBCA00B53EF0 /* CocoaHttpServer.h */,
+				1EDD3CDE1E31FA9100B53EF0 /* HTTPAuthenticationRequest.h */,
+				1EDD3CDF1E31FA9100B53EF0 /* HTTPAuthenticationRequest.m */,
+				1EDD3CE01E31FA9100B53EF0 /* HTTPConnection.h */,
+				1EDD3CE11E31FA9100B53EF0 /* HTTPConnection.m */,
+				1EDD3CE21E31FA9100B53EF0 /* HTTPLogging.h */,
+				1EDD3CE31E31FA9100B53EF0 /* HTTPMessage.h */,
+				1EDD3CE41E31FA9100B53EF0 /* HTTPMessage.m */,
+				1EDD3CE51E31FA9100B53EF0 /* HTTPResponse.h */,
+				1EDD3CE61E31FA9100B53EF0 /* HTTPServer.h */,
+				1EDD3CE71E31FA9100B53EF0 /* HTTPServer.m */,
+				1EDD3CE81E31FA9100B53EF0 /* Mime */,
+				1EDD3CEF1E31FA9100B53EF0 /* Responses */,
+				1EDD3CFA1E31FA9100B53EF0 /* WebSocket.h */,
+				1EDD3CFB1E31FA9100B53EF0 /* WebSocket.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		1EDD3CD71E31FA9100B53EF0 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				1EDD3CD81E31FA9100B53EF0 /* DDData.h */,
+				1EDD3CD91E31FA9100B53EF0 /* DDData.m */,
+				1EDD3CDA1E31FA9100B53EF0 /* DDNumber.h */,
+				1EDD3CDB1E31FA9100B53EF0 /* DDNumber.m */,
+				1EDD3CDC1E31FA9100B53EF0 /* DDRange.h */,
+				1EDD3CDD1E31FA9100B53EF0 /* DDRange.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		1EDD3CE81E31FA9100B53EF0 /* Mime */ = {
+			isa = PBXGroup;
+			children = (
+				1EDD3CE91E31FA9100B53EF0 /* MultipartFormDataParser.h */,
+				1EDD3CEA1E31FA9100B53EF0 /* MultipartFormDataParser.m */,
+				1EDD3CEB1E31FA9100B53EF0 /* MultipartMessageHeader.h */,
+				1EDD3CEC1E31FA9100B53EF0 /* MultipartMessageHeader.m */,
+				1EDD3CED1E31FA9100B53EF0 /* MultipartMessageHeaderField.h */,
+				1EDD3CEE1E31FA9100B53EF0 /* MultipartMessageHeaderField.m */,
+			);
+			path = Mime;
+			sourceTree = "<group>";
+		};
+		1EDD3CEF1E31FA9100B53EF0 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				1EDD3CF01E31FA9100B53EF0 /* HTTPAsyncFileResponse.h */,
+				1EDD3CF11E31FA9100B53EF0 /* HTTPAsyncFileResponse.m */,
+				1EDD3CF21E31FA9100B53EF0 /* HTTPDataResponse.h */,
+				1EDD3CF31E31FA9100B53EF0 /* HTTPDataResponse.m */,
+				1EDD3CF41E31FA9100B53EF0 /* HTTPDynamicFileResponse.h */,
+				1EDD3CF51E31FA9100B53EF0 /* HTTPDynamicFileResponse.m */,
+				1EDD3CF61E31FA9100B53EF0 /* HTTPFileResponse.h */,
+				1EDD3CF71E31FA9100B53EF0 /* HTTPFileResponse.m */,
+				1EDD3CF81E31FA9100B53EF0 /* HTTPRedirectResponse.h */,
+				1EDD3CF91E31FA9100B53EF0 /* HTTPRedirectResponse.m */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		1EDD3CFC1E31FA9100B53EF0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1EDD3CFD1E31FA9100B53EF0 /* WebDAV */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1EDD3CFD1E31FA9100B53EF0 /* WebDAV */ = {
+			isa = PBXGroup;
+			children = (
+				1EDD3CFE1E31FA9100B53EF0 /* DAVConnection.h */,
+				1EDD3CFF1E31FA9100B53EF0 /* DAVConnection.m */,
+				1EDD3D001E31FA9100B53EF0 /* DAVResponse.h */,
+				1EDD3D011E31FA9100B53EF0 /* DAVResponse.m */,
+				1EDD3D021E31FA9100B53EF0 /* DELETEResponse.h */,
+				1EDD3D031E31FA9100B53EF0 /* DELETEResponse.m */,
+				1EDD3D041E31FA9100B53EF0 /* PUTResponse.h */,
+				1EDD3D051E31FA9100B53EF0 /* PUTResponse.m */,
+			);
+			path = WebDAV;
+			sourceTree = "<group>";
+		};
+		1EF1951D1E35FD870017931A /* RTCUtils */ = {
+			isa = PBXGroup;
+			children = (
+				1E922C6D1E1E2C0600BEEF04 /* WebRTC.framework */,
+				1EDEA3DE1E20C3EA0027D727 /* RTCUtil.swift */,
+				1E69694E1E21336C00D4CF45 /* RTCSessionDescription+JSON.h */,
+				1E69694F1E21336D00D4CF45 /* RTCSessionDescription+JSON.m */,
+				1E69694B1E21335F00D4CF45 /* RTCIceCandidate+JSON.h */,
+				1E69694C1E21335F00D4CF45 /* RTCIceCandidate+JSON.m */,
+				1E6969481E21334600D4CF45 /* RTCIceServer+JSON.h */,
+				1E6969491E21334600D4CF45 /* RTCIceServer+JSON.m */,
+			);
+			name = RTCUtils;
+			sourceTree = "<group>";
+		};
+		B99E7B78CD25FCBB67D1FBC4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				05436B812EE78E4FA82E4C9D /* Pods-ChatWithWebRTC.debug.xcconfig */,
+				48524157B71FD93FC6FDC4D5 /* Pods-ChatWithWebRTC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1E922C2F1E1D28BD00BEEF04 /* ChatWithWebRTC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E922C421E1D28BE00BEEF04 /* Build configuration list for PBXNativeTarget "ChatWithWebRTC" */;
+			buildPhases = (
+				F6615526284E9EE00211C166 /* [CP] Check Pods Manifest.lock */,
+				1E922C2C1E1D28BD00BEEF04 /* Sources */,
+				1E922C2D1E1D28BD00BEEF04 /* Frameworks */,
+				1E922C2E1E1D28BD00BEEF04 /* Resources */,
+				1E34AAD61E1EA74500700883 /* Embed Frameworks */,
+				38D12818E41D0BA192AABE78 /* [CP] Embed Pods Frameworks */,
+				A4AB1DF7F79952CF5453F146 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChatWithWebRTC;
+			productName = ChatWithWebRTC;
+			productReference = 1E922C301E1D28BD00BEEF04 /* ChatWithWebRTC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1E922C281E1D28BD00BEEF04 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = JingWen;
+				TargetAttributes = {
+					1E922C2F1E1D28BD00BEEF04 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 9396527TM5;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1E922C2B1E1D28BD00BEEF04 /* Build configuration list for PBXProject "ChatWithWebRTC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1E922C271E1D28BC00BEEF04;
+			productRefGroup = 1E922C311E1D28BD00BEEF04 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1E922C2F1E1D28BD00BEEF04 /* ChatWithWebRTC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1E922C2E1E1D28BD00BEEF04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E922C3E1E1D28BE00BEEF04 /* LaunchScreen.storyboard in Resources */,
+				1E922C3B1E1D28BE00BEEF04 /* Assets.xcassets in Resources */,
+				1E922C391E1D28BE00BEEF04 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38D12818E41D0BA192AABE78 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChatWithWebRTC/Pods-ChatWithWebRTC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4AB1DF7F79952CF5453F146 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChatWithWebRTC/Pods-ChatWithWebRTC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6615526284E9EE00211C166 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1E922C2C1E1D28BD00BEEF04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EDD3D121E31FA9100B53EF0 /* HTTPDynamicFileResponse.m in Sources */,
+				1E922C361E1D28BD00BEEF04 /* ChatViewController.swift in Sources */,
+				1E6969571E236AD600D4CF45 /* SDPUtils.swift in Sources */,
+				1EDD3D071E31FA9100B53EF0 /* DDNumber.m in Sources */,
+				1E19E0091E3040E900B869F0 /* BonjourClient.swift in Sources */,
+				1E69695B1E249A9100D4CF45 /* SignalingServer.swift in Sources */,
+				1EDD3C6D1E31C84400B53EF0 /* BaseHTTPConnection.m in Sources */,
+				1EDD3D061E31FA9100B53EF0 /* DDData.m in Sources */,
+				1EDD3D0F1E31FA9100B53EF0 /* MultipartMessageHeaderField.m in Sources */,
+				1E19E0111E31AF3E00B869F0 /* SignalingResponse.swift in Sources */,
+				1EDD3D081E31FA9100B53EF0 /* DDRange.m in Sources */,
+				1E51DB311E2DE4C700E2969C /* SignalingMessage.swift in Sources */,
+				1EDD3D091E31FA9100B53EF0 /* HTTPAuthenticationRequest.m in Sources */,
+				1E69694A1E21334600D4CF45 /* RTCIceServer+JSON.m in Sources */,
+				1E69694D1E21335F00D4CF45 /* RTCIceCandidate+JSON.m in Sources */,
+				1EDD3D141E31FA9100B53EF0 /* HTTPRedirectResponse.m in Sources */,
+				1E6969551E23529300D4CF45 /* ConstraintsFactory.swift in Sources */,
+				1EDD3D191E31FA9100B53EF0 /* PUTResponse.m in Sources */,
+				1EDD3D131E31FA9100B53EF0 /* HTTPFileResponse.m in Sources */,
+				1EDD3D181E31FA9100B53EF0 /* DELETEResponse.m in Sources */,
+				1E922C341E1D28BD00BEEF04 /* AppDelegate.swift in Sources */,
+				1EDD3D171E31FA9100B53EF0 /* DAVResponse.m in Sources */,
+				1EDD3D0E1E31FA9100B53EF0 /* MultipartMessageHeader.m in Sources */,
+				1EDD3D0A1E31FA9100B53EF0 /* HTTPConnection.m in Sources */,
+				1E922C6C1E1E0DA600BEEF04 /* SettingsStore.m in Sources */,
+				1EDD3D0B1E31FA9100B53EF0 /* HTTPMessage.m in Sources */,
+				1E4164C21E29D2B900AA33C8 /* Callee.swift in Sources */,
+				1E6969501E21336D00D4CF45 /* RTCSessionDescription+JSON.m in Sources */,
+				1EDD3D111E31FA9100B53EF0 /* HTTPDataResponse.m in Sources */,
+				1EDD3D0D1E31FA9100B53EF0 /* MultipartFormDataParser.m in Sources */,
+				1ECE739B1E33017000896E2B /* CalleePool.swift in Sources */,
+				1EDEA3DF1E20C3EA0027D727 /* RTCUtil.swift in Sources */,
+				1E922C6B1E1E0DA600BEEF04 /* SettingsModel.m in Sources */,
+				1EDD3D161E31FA9100B53EF0 /* DAVConnection.m in Sources */,
+				1E19E00F1E30B6AF00B869F0 /* SignalingServerConnection.swift in Sources */,
+				1E4164C01E29D1D700AA33C8 /* PeersTableViewController.swift in Sources */,
+				1EDD3D151E31FA9100B53EF0 /* WebSocket.m in Sources */,
+				1EDD3D0C1E31FA9100B53EF0 /* HTTPServer.m in Sources */,
+				1E19E00D1E30594100B869F0 /* BonjourService.swift in Sources */,
+				1EDD3D101E31FA9100B53EF0 /* HTTPAsyncFileResponse.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1E922C371E1D28BE00BEEF04 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1E922C381E1D28BE00BEEF04 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1E922C3C1E1D28BE00BEEF04 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1E922C3D1E1D28BE00BEEF04 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1E922C401E1D28BE00BEEF04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1E922C411E1D28BE00BEEF04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1E922C431E1D28BE00BEEF04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05436B812EE78E4FA82E4C9D /* Pods-ChatWithWebRTC.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 9396527TM5;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ChatWithWebRTC",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"GCDAsyncSocketLoggingEnabled=1",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(SDKROOT)/usr/include/libxml2\n\n$(SDKROOT)/usr/include/libxml2\n\n$(SDKROOT)/usr/include/libxml2",
+				);
+				INFOPLIST_FILE = ChatWithWebRTC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tw.jwzuang.ChatWithWebRTC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ChatWithWebRTC/ChatWithWebRTC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1E922C441E1D28BE00BEEF04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48524157B71FD93FC6FDC4D5 /* Pods-ChatWithWebRTC.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 9396527TM5;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ChatWithWebRTC",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(SDKROOT)/usr/include/libxml2\n\n$(SDKROOT)/usr/include/libxml2\n\n$(SDKROOT)/usr/include/libxml2",
+				);
+				INFOPLIST_FILE = ChatWithWebRTC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tw.jwzuang.ChatWithWebRTC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ChatWithWebRTC/ChatWithWebRTC-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1E922C2B1E1D28BD00BEEF04 /* Build configuration list for PBXProject "ChatWithWebRTC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E922C401E1D28BE00BEEF04 /* Debug */,
+				1E922C411E1D28BE00BEEF04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E922C421E1D28BE00BEEF04 /* Build configuration list for PBXNativeTarget "ChatWithWebRTC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E922C431E1D28BE00BEEF04 /* Debug */,
+				1E922C441E1D28BE00BEEF04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1E922C281E1D28BD00BEEF04 /* Project object */;
+}

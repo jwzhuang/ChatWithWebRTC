@@ -1,0 +1,6 @@
+framework module Pods_ChatWithWebRTC {
+  umbrella header "Pods-ChatWithWebRTC-umbrella.h"
+
+  export *
+  module * { export * }
+}

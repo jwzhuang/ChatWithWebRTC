@@ -1,0 +1,49 @@
+PODS:
+  - Alamofire (4.3.0)
+  - CocoaAsyncSocket (7.5.1):
+    - CocoaAsyncSocket/GCD (= 7.5.1)
+  - CocoaAsyncSocket/GCD (7.5.1)
+  - CocoaLumberjack (3.0.0):
+    - CocoaLumberjack/Default (= 3.0.0)
+    - CocoaLumberjack/Extensions (= 3.0.0)
+  - CocoaLumberjack/Core (3.0.0)
+  - CocoaLumberjack/Default (3.0.0):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (3.0.0):
+    - CocoaLumberjack/Default
+  - DateTools (2.0.0-beta.3)
+  - GzipSwift (3.1.2)
+  - HTTPStatusCodes (3.1.0)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - CocoaAsyncSocket
+  - CocoaLumberjack
+  - DateTools (from `https://github.com/MatthewYork/DateTools`, branch `swift`)
+  - GzipSwift
+  - HTTPStatusCodes (~> 3.1.0)
+  - SwiftyJSON
+
+EXTERNAL SOURCES:
+  DateTools:
+    :branch: swift
+    :git: https://github.com/MatthewYork/DateTools
+
+CHECKOUT OPTIONS:
+  DateTools:
+    :commit: b763d05a9bfa9d18235e5520a40d3bd4751fcc83
+    :git: https://github.com/MatthewYork/DateTools
+
+SPEC CHECKSUMS:
+  Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
+  CocoaAsyncSocket: e0a7e93b2ffa411592ff87e58524fbbc9b95b4fa
+  CocoaLumberjack: c823149bccc5519a9447aeb433be7b1212a7d6a5
+  DateTools: fe8ad1e2e77ebb9cf1db6becf077772dd83fdb63
+  GzipSwift: 86700e6530b3aa5e782ed7107cde2deea6b16688
+  HTTPStatusCodes: e0747e2497f1c887944a306b7d7122cb2a01f553
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: 0cf5a9c09bf42e3c0d91e67c2f3f0ac89e4ff2e5
+
+COCOAPODS: 1.1.1
